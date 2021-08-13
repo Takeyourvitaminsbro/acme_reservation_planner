@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://acme_reservation_planner/./src/index.js?");
+eval("let users;\n\n\nconst renderFrontPageList = async () => {\n    const response = await fetch('/api/users');\n    users = await response.json();\n    renderDetailPageList();\n}\n\nconst renderDetailPageList = () => {\n    const hash = parseInt(window.location.hash.slice(1));\n}\n\n//# sourceURL=webpack://acme_reservation_planner/./src/index.js?");
 
 /***/ })
 
